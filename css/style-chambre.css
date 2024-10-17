@@ -1,0 +1,91 @@
+@import url(reset.css);
+@import url(variable.css);
+@import url(header.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: 'cinzelregular';
+    src: url(../asset/font/cinzel-variablefont_wght-webfont.woff2) format('woff2'),
+         url(../asset/font/cinzel-variablefont_wght-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'cinzelregular';
+    font-size: 16px;
+    background: rgb(204, 204, 204) url(../asset/images/fond.png) no-repeat;
+    background-size: cover;
+}
+
+.main{
+    margin-top: 128px;
+} 
+
+/* page chambre */
+
+.picture{
+    height: 500px;
+    border-radius: var(--radius-xxl);
+}
+
+.chambres__main__content{
+    display: flex;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.chambres__title{
+    color: var(--bg-primary);
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-left: 30px;
+}
+
+.chambres__paragraphe{
+    padding: 50px;
+    font-size: var(--font-size-xl);
+    color: #db773c;
+}
+
+.chambres__ligne{
+    height: 2px;
+    background-color: var(--bg-primary);
+    color: var(--bg-primary);
+    border: 1px solid #f5894b;
+}
+
+.bouton{
+    background-color: var(--bg-primary);
+    color: var(--text-color-primary-dark);
+    text-decoration: none;
+    padding: var(--spacing-xs);
+    width: 120px;
+    text-align: center;
+    border-radius: var(--radius-xl);
+    font-weight: var(--font-weight-lg);
+    opacity: 80%;
+}
+
+.bouton:hover{
+    opacity: 50%;
+}
+
+.bouton__content{
+    display: flex;
+    justify-content: right;
+    margin-right: 200px;
+}
+
+.chambres__ligne2{
+    height: 3px;
+    background-color: var(--bg-primary);
+    color: var(--bg-primary);
+    border: 1px solid #f5894b;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}

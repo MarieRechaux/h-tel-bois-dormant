@@ -1,0 +1,37 @@
+.header__nav{
+    background-color: var(--bg-primary);
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 26px;
+    opacity: 80%;
+    z-index: 1000;
+}
+
+.header__logo{
+    width: var(--max-width-logo);
+    padding-left: 50px;
+}
+
+.header__logo:hover{
+    width: var(--max-width-logo-l)
+}
+
+.nav__link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 4rem;
+}
+
+.nav__list{
+    display: flex;
+}
+
